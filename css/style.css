@@ -53,7 +53,6 @@ body {
 .card-top,
 .card-bottom {
 	width: 100%;
-	height: 50%;
 	margin: 0 auto;
 }
 
@@ -61,11 +60,13 @@ body {
 	background-color: #41781a;
 	border-bottom: solid 2px #000;
 	text-align: center;
+	height: 35%;
 }
 
 .card-bottom {
 	content: ' ';
 	background-color: #8cc067;
+	height: 65%;
 }
 
 h1,
@@ -87,9 +88,18 @@ h2 {
 	display: inline-block;
 }
 
+.card-skills li:after {
+	content: ' -';
+}
+
+.card-skills li:last-of-type:after {
+	content: '';
+}
+
+
 .card-contact {
 	list-style-type: none;
-	padding: 15px 0 0 10px;
+	padding: 45px 0 0 10px;
 }
 
 .card-contact-label {
