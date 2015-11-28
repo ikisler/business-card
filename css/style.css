@@ -1,0 +1,121 @@
+
+body {
+	font: 16px tahoma, arial, sans-serif;
+}
+
+/*** Card container and flipping pieces ***/
+.card-container {
+	perspective: 1000;
+	margin: 50px;
+	border: solid 1px #40185B;
+}
+
+.card-container:hover .card-flipper, .card-container.hover .card-flipper {
+	transform: rotateY(180deg);
+}
+
+.card-container {
+	width: 350px;
+	height: 202px;
+	color: #fff;
+}
+
+.card-front,
+.card-back {
+	width: 350px;
+	height: 200px;
+}
+
+.card-flipper {
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.card-front,
+.card-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+
+.card-front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.card-back {
+	transform: rotateY(180deg);
+}
+
+/*** Card Content ***/
+.card-top,
+.card-bottom {
+	width: 100%;
+	height: 50%;
+	margin: 0 auto;
+}
+
+.card-top {
+	background-color: #41781a;
+	border-bottom: solid 2px #000;
+	text-align: center;
+}
+
+.card-bottom {
+	content: ' ';
+	background-color: #8cc067;
+}
+
+h1,
+h2,
+ul {
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+h1 {
+	font-size: 1.9em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+.card-skills li {
+	display: inline-block;
+}
+
+.card-contact {
+	list-style-type: none;
+	padding: 15px 0 0 10px;
+}
+
+.card-contact-label {
+	display: inline-block;
+	width: 25px;
+}
+
+.card-contact-info {
+	color: #5A3076;
+	text-decoration: none;
+}
+
+.card-contact-info:hover {
+	text-shadow: 0px 0px 10px #fff;
+}
+
+img {
+	position: absolute;
+	bottom: 15px;
+	left: 25px;
+	width: 75px;
+}
+
+/*** Instructions ***/
+.instructions-container {
+	width: 350px;
+	margin: auto 50px;
+	text-align: center;
+}
